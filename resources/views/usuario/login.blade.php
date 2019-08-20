@@ -7,11 +7,13 @@
    <title>Document</title>
 </head>
 <body>
-<form action="ejercicio1.blade.php" method="post">
- <p>num1: <input type="text" name="num1" /></p>
- <p>num2: <input type="text" name="num2" /></p>
- <p><input type="submit" /></p>
-</form>
-
+   <form  action="/login" method="post">
+     @csrf
+   <input type="text" name="user">
+   <input type="password" name="password">
+   <button type="submit">login</button>
+ 
+   
+   </form>
 </body>
 </html>

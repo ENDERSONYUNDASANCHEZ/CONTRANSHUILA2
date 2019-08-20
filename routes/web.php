@@ -23,7 +23,7 @@ Route::get('/usuario', function () {
     return view('usuario.formulario');
 });
 */
-Route::get('/eje1', function () {
+/*Route::post('/eje1', function () {
     return view('usuario.ejercicio1');
 });
 
@@ -36,3 +36,10 @@ Route::get('/eje3', function () {
 });
 
 Route::resource('usuario', 'UsuarioController');
+*/
+
+Route::get('/', function () {
+    return view("usuario.login");
+});
+Route::post('/login', "Mio@index");
+
